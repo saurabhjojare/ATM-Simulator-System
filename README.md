@@ -1,1 +1,1 @@
-## Bank Management System
+## ATM Simulator System
