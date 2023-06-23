@@ -1,4 +1,4 @@
-# ATM Simulator System
+# Bank Management System
 
 This is an Bank Management System, a software implementation that simulates the functionalities of an Automated Teller Machine (ATM). It provides a user-friendly interface to perform various banking operations such as withdrawing cash, depositing funds, checking balance, and transferring money.
 
