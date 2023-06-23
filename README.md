@@ -1,6 +1,6 @@
 # ATM Simulator System
 
-This is an ATM Simulator System, a software implementation that simulates the functionalities of an Automated Teller Machine (ATM). It provides a user-friendly interface to perform various banking operations such as withdrawing cash, depositing funds, checking balance, and transferring money.
+This is an Bank Management System, a software implementation that simulates the functionalities of an Automated Teller Machine (ATM). It provides a user-friendly interface to perform various banking operations such as withdrawing cash, depositing funds, checking balance, and transferring money.
 
 ## Features
 
@@ -25,7 +25,7 @@ To run the ATM Simulator System locally, follow these steps:
 1. Ensure you have Java and MySQL installed on your machine.
 2. Clone this repository to your local machine using the following command:
 
-git clone https://github.com/saurabhjojare/ATM-Simulator-System.git
+git clone https://github.com/saurabhjojare/Bank-Management-System.git
 
 3. Import the project into your preferred IDE (such as Eclipse).
 4. Set up a MySQL database and configure the database connection settings in the project.
@@ -33,7 +33,7 @@ git clone https://github.com/saurabhjojare/ATM-Simulator-System.git
 
 ## Contributing
 
-Contributions to this ATM Simulator System are welcome! If you find any issues or would like to suggest improvements, please feel free to create a pull request or open an issue.
+Contributions to this Bank Management System are welcome! If you find any issues or would like to suggest improvements, please feel free to create a pull request or open an issue.
 
 ## License
 
