@@ -14,7 +14,6 @@ This is an Bank Management System, a software implementation that simulates the 
 ## Technologies Used
 
 - Programming Language: [Java](https://www.java.com/)
-- Framework: [JavaFX](https://openjfx.io/)
 - Database: [MySQL](https://www.mysql.com/)
 - IDE: [Eclipse](https://www.eclipse.org/)
 
