@@ -1,6 +1,6 @@
 # Bank Management System
 
-This is an Bank Management System, a software implementation that simulates the functionalities of an Automated Teller Machine (ATM). It provides a user-friendly interface to perform various banking operations such as withdrawing cash, depositing funds, checking balance, and transferring money.
+This is an Bank Management System, a software implementation that simulates the functionalities of an Automated Teller Machine (ATM). It provides a user-friendly interface to perform various banking operations such as withdrawing cash, depositing funds, and checking balance.
 
 ## Features
 
@@ -8,7 +8,6 @@ This is an Bank Management System, a software implementation that simulates the 
 - Cash withdrawal: Users can withdraw cash from their accounts by specifying the desired amount.
 - Funds deposit: Users can deposit funds into their accounts by entering the amount they wish to deposit.
 - Balance inquiry: Users can check their account balance to view the available funds.
-- Funds transfer: Users can transfer money between accounts, either within the same bank or to other banks.
 - Transaction history: The system maintains a record of all transactions performed by the user for future reference.
 
 ## Technologies Used
@@ -38,4 +37,3 @@ Contributions to this Bank Management System are welcome! If you find any issues
 ## License
 
 This project is licensed under the [MIT License](LICENSE). You are free to use, modify, and distribute this software.
-
