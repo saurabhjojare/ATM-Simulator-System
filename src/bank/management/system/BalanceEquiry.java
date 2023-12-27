@@ -6,12 +6,11 @@ import java.awt.event.*;
 import java.sql.*;
 import java.util.*;
 
-
 public class BalanceEquiry extends JFrame implements ActionListener {
     String pinnumber;
     JButton back;
     BalanceEquiry(String pinnumber) {
-        setLayout(null);
+
         this.pinnumber = pinnumber;
 
         ImageIcon img = new ImageIcon(ClassLoader.getSystemResource("icons/atm.jpg"));
@@ -21,9 +20,8 @@ public class BalanceEquiry extends JFrame implements ActionListener {
         image.setBounds(0,0,700,700);
         add(image);
 
-
         back = new JButton("Back");
-        back.setBounds(135,400,120,30);
+        back.setBounds(80,330,120,30);
         back.addActionListener(this);
         image.add(back);
 
@@ -45,18 +43,15 @@ public class BalanceEquiry extends JFrame implements ActionListener {
 
         JLabel text = new JLabel("Current Balance "+balance);
         text.setForeground(Color.WHITE);
-        text.setBounds(179,240,200,35);
+        text.setFont(new Font("Raleway",Font.BOLD,18));
+        text.setBounds(80,150,200,35);
         image.add(text);
 
-
-
         getContentPane().setBackground(Color.WHITE);
-        setSize(700,700);
-        setLocation(340,17);
-        //setUndecorated(true);
+        setSize(600,510);
+        setLocation(390,100);
+        setUndecorated(true);
         setVisible(true);
-
-
     }
 
     public void actionPerformed(ActionEvent ae) {

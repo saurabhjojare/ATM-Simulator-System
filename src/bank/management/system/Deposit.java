@@ -13,7 +13,6 @@ public class Deposit extends JFrame implements ActionListener {
     String pinnumber;
     Deposit(String pinnumber) {
         this.pinnumber = pinnumber;
-        setLayout(null);
 
         ImageIcon img = new ImageIcon(ClassLoader.getSystemResource("icons/atm.jpg"));
         Image img2 = img.getImage().getScaledInstance(700, 700, Image.SCALE_DEFAULT);
@@ -25,27 +24,28 @@ public class Deposit extends JFrame implements ActionListener {
         JLabel text = new JLabel("Enter Amount");
         text.setForeground(Color.WHITE);
         text.setFont(new Font("System",Font.BOLD,16));
-        text.setBounds(179,240,200,35);
+        text.setBounds(80,160,200,35);
         image.add(text);
 
         amount = new JTextField();
         amount.setFont(new Font("Raleway",Font.BOLD,22));
-        amount.setBounds(179,280,200,35);
+        amount.setBounds(80,200,150,25);
         image.add(amount);
 
         deposit = new JButton("Deposit");
-        deposit.setBounds(270,420,120,30);
+        deposit.setBounds(225,330,120,30);
         deposit.addActionListener(this);
         image.add(deposit);
 
         back = new JButton("Back");
-        back.setBounds(130,420,120,30);
+        back.setBounds(78,330,120,30);
         back.addActionListener(this);
         image.add(back);
 
         getContentPane().setBackground(Color.WHITE);
-        setSize(700,700);
-        setLocation(340,17);
+        setSize(600,510);
+        setLocation(390,100);
+        setUndecorated(true);
         setVisible(true);
     }
 

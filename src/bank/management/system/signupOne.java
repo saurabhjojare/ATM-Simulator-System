@@ -6,7 +6,6 @@ import java.util.*;
 import com.toedter.calendar.JDateChooser;
 import java.awt.event.*;
 
-
 public class signupOne extends JFrame implements ActionListener {
     long random;
     JTextField nameTextField, middleNameTextField, dobTextField, emailTextField, addressTextField, cityTextField, stateTextField, pinTextField;
@@ -16,63 +15,58 @@ public class signupOne extends JFrame implements ActionListener {
     signupOne() {
 
         setLayout(null);
-        setTitle("Page 1");
+        setTitle("Page 1 - Personal Details");
 
         Random ran = new Random();
         random = Math.abs((ran.nextLong() % 9000L) + 1000L);
 
         JLabel formno = new JLabel("Application Form ("+random+")");
-        formno.setFont(new Font("Raleway", Font.BOLD, 23));
-        formno.setBounds(210,25,600,40);
+        formno.setFont(new Font("Raleway", Font.BOLD, 20));
+        formno.setBounds(200,25,600,40);
         add(formno);
-
-        JLabel personalDetails = new JLabel("Personal Details");
-        personalDetails.setFont(new Font("Raleway", Font.BOLD, 18));
-        personalDetails.setBounds(270,90,300,30);
-        add(personalDetails);
 
         JLabel name = new JLabel("Name");
         name.setFont(new Font("Raleway", Font.BOLD, 18));
-        name.setBounds(80,140,300,30);
+        name.setBounds(80,80,300,30);
         add(name);
 
         nameTextField = new JTextField();
         nameTextField.setFont(new Font("Raleway", Font.BOLD,14));
-        nameTextField.setBounds(290,145,300,23);
+        nameTextField.setBounds(290,85,200,23);
         add(nameTextField);
 
         JLabel middleName = new JLabel("Middle Name");
         middleName.setFont(new Font("Raleway", Font.BOLD, 18));
-        middleName.setBounds(80,180,300,30);
+        middleName.setBounds(80,120,300,30);
         add(middleName);
 
         middleNameTextField = new JTextField();
         middleNameTextField.setFont(new Font("Raleway", Font.BOLD,14));
-        middleNameTextField.setBounds(290,185,300,23);
+        middleNameTextField.setBounds(290,125,200,23);
         add(middleNameTextField);
 
         JLabel dob = new JLabel("Date Of Birth");
         dob.setFont(new Font("Raleway", Font.BOLD, 18));
-        dob.setBounds(80,220,300,30);
+        dob.setBounds(80,160,300,30);
         add(dob);
 
         dateChooser = new JDateChooser();
-        dateChooser.setBounds(290,225,300,23);
+        dateChooser.setBounds(290,165,200,23);
         dateChooser.setForeground(new Color(105,105,105));
         add(dateChooser);
 
         JLabel gender = new JLabel("Gender");
         gender.setFont(new Font("Raleway", Font.BOLD, 18));
-        gender.setBounds(80,260,300,30);
+        gender.setBounds(80,200,300,30);
         add(gender);
 
         male = new JRadioButton("Male");
-        male.setBounds(290,265,60,30);
+        male.setBounds(290,200,60,30);
         male.setBackground(Color.WHITE);
         add(male);
 
         female = new JRadioButton("Female");
-        female.setBounds(360,265,80,30);
+        female.setBounds(360,200,80,30);
         female.setBackground(Color.WHITE);
         add(female);
 
@@ -82,26 +76,26 @@ public class signupOne extends JFrame implements ActionListener {
 
         JLabel email = new JLabel("Email");
         email.setFont(new Font("Raleway", Font.BOLD, 18));
-        email.setBounds(80,300,300,30);
+        email.setBounds(80,240,300,30);
         add(email);
 
         emailTextField = new JTextField();
         emailTextField.setFont(new Font("Raleway", Font.BOLD,14));
-        emailTextField.setBounds(290,305,300,23);
+        emailTextField.setBounds(290,245,200,23);
         add(emailTextField);
 
         JLabel marital = new JLabel("Marital Status");
         marital.setFont(new Font("Raleway", Font.BOLD, 18));
-        marital.setBounds(80,340,300,30);
+        marital.setBounds(80,280,300,30);
         add(marital);
 
         married = new JRadioButton("Married");
-        married.setBounds(290,340,90,30);
+        married.setBounds(290,280,90,30);
         married.setBackground(Color.WHITE);
         add(married);
 
         single = new JRadioButton("Single");
-        single.setBounds(380,340,80,30);
+        single.setBounds(380,280,80,30);
         single.setBackground(Color.WHITE);
         add(single);
 
@@ -111,57 +105,56 @@ public class signupOne extends JFrame implements ActionListener {
 
         JLabel address = new JLabel("Address");
         address.setFont(new Font("Raleway", Font.BOLD, 18));
-        address.setBounds(80,380,300,30);
+        address.setBounds(80,320,300,30);
         add(address);
 
         addressTextField = new JTextField();
         addressTextField.setFont(new Font("Raleway", Font.BOLD,14));
-        addressTextField.setBounds(290,385,300,23);
+        addressTextField.setBounds(290,325,200,23);
         add(addressTextField);
 
         JLabel city = new JLabel("City");
         city.setFont(new Font("Raleway", Font.BOLD, 18));
-        city.setBounds(80,420,300,30);
+        city.setBounds(80,360,300,30);
         add(city);
 
         cityTextField = new JTextField();
         cityTextField.setFont(new Font("Raleway", Font.BOLD,14));
-        cityTextField.setBounds(290,425,300,23);
+        cityTextField.setBounds(290,365,200,23);
         add(cityTextField);
 
         JLabel state = new JLabel("State");
         state.setFont(new Font("Raleway", Font.BOLD, 18));
-        state.setBounds(80,460,300,30);
+        state.setBounds(80,400,300,30);
         add(state);
 
         stateTextField = new JTextField();
         stateTextField.setFont(new Font("Raleway", Font.BOLD,14));
-        stateTextField.setBounds(290,465,300,23);
+        stateTextField.setBounds(290,405,200,23);
         add(stateTextField);
 
         JLabel pin = new JLabel("Pin Code");
         pin.setFont(new Font("Raleway", Font.BOLD, 18));
-        pin.setBounds(80,500,300,30);
+        pin.setBounds(80,440,300,30);
         add(pin);
 
         pinTextField = new JTextField();
         pinTextField.setFont(new Font("Raleway", Font.BOLD,14));
-        pinTextField.setBounds(290,505,300,23);
+        pinTextField.setBounds(290,445,200,23);
         add(pinTextField);
 
         next = new JButton("Next");
         next.setBackground(Color.BLACK);
         next.setForeground(Color.WHITE);
         next.setFont(new Font("Raleway", Font.BOLD,14));
-        next.setBounds(510,560,80,30);
+        next.setBounds(410,485,80,30);
         next.addActionListener(this);
         add(next);
 
         getContentPane().setBackground(Color.WHITE);
-        setSize(700,700);
-        setLocation(340,17);
+        setSize(580,600);
+        setLocation(400,67);
         setVisible(true);
-
     }
 
     public void actionPerformed(ActionEvent ae) {

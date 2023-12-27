@@ -6,76 +6,62 @@ import java.awt.event.*;
 import java.sql.*;
 
 public class Login extends JFrame implements ActionListener {
-
     JButton login, signup, clear;
+    JLabel text, cardno, pin;
     JTextField cardTextField;
     JPasswordField pinTextField;
-
     public Login() {
 
-        setTitle("Automated Teller Machine");
+        setTitle("Login");
 
         setLayout(null);
 
-        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icons/logo.jpg"));
-        Image i2 = i1.getImage().getScaledInstance(100,100, Image.SCALE_DEFAULT);
-        ImageIcon i3 = new ImageIcon(i2);
-        JLabel  label = new JLabel(i3);
-        label.setBounds(160, 40, 100,100);
-        add(label);
-
-        JLabel text = new JLabel("Welcome to ATM");
-        text.setFont(new Font("Osward", Font.BOLD, 30));
-        text.setBounds(350,70,400,40);
-        add(text);
-
-        JLabel cardno = new JLabel("Card Number");
-        cardno.setFont(new Font("Osward", Font.BOLD, 23));
-        cardno.setBounds(180,170,400,40);
+        cardno = new JLabel("Card Number");
+        cardno.setFont(new Font("Osward", Font.BOLD, 18));
+        cardno.setBounds(40,80,400,40);
         add(cardno);
 
         cardTextField = new JTextField();
-        cardTextField.setBounds(350, 175,250,30);
+        cardTextField.setBounds(220, 90,204,30);
         cardTextField.setFont(new Font("Arial", Font.BOLD,14));
         add(cardTextField);
 
-        JLabel pin = new JLabel("Pin");
-        pin.setFont(new Font("Osward", Font.BOLD, 23));
-        pin.setBounds(180,240,400,40);
+        pin = new JLabel("Pin");
+        pin.setFont(new Font("Osward", Font.BOLD, 18));
+        pin.setBounds(40,140,400,40);
         add(pin);
 
         pinTextField = new JPasswordField();
-        pinTextField.setBounds(350, 245,250,30);
+        pinTextField.setBounds(220, 147,204,30);
         pinTextField.setFont(new Font("Arial", Font.BOLD,14));
         add(pinTextField);
 
         login = new JButton("Sign In");
-        login.setBounds(350,300,100,30);
+        login.setBounds(220,200,100,30);
         login.setBackground(Color.black);
         login.setForeground(Color.WHITE);
         login.addActionListener(this);
         add(login);
 
         clear = new JButton("Clear");
-        clear.setBounds(500,300,100,30);
+        clear.setBounds(324,200,100,30);
         clear.setBackground(Color.black);
         clear.setForeground(Color.WHITE);
         clear.addActionListener(this);
         add(clear);
 
         signup = new JButton("Sign Up");
-        signup.setBounds(350,350,250,30);
+        signup.setBounds(220,250,204,30);
         signup.setBackground(Color.black);
         signup.setForeground(Color.WHITE);
         signup.addActionListener(this);
         add(signup);
 
-
         getContentPane().setBackground(Color.WHITE);
 
-        setSize(800, 480);
+        setSize(480, 410);
         setVisible(true);
-        setLocation(280,130);
+        setLocation(440,135);
     }
 
     public void actionPerformed(ActionEvent ae) {

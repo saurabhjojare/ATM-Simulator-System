@@ -7,7 +7,6 @@ import java.sql.*;
 import java.util.*;
 
 public class MiniStatement extends JFrame {
-
     MiniStatement(String pinnumber) {
         setTitle("Mini Statement");
 
@@ -16,16 +15,12 @@ public class MiniStatement extends JFrame {
         JLabel mini = new JLabel();
         add(mini);
 
-        JLabel bank = new JLabel("Mini Statement");
-        bank.setBounds(163,20,100,20);
-        add(bank);
-
         JLabel card = new JLabel();
-        card.setBounds(20,80,300,20);
+        card.setBounds(20,30,300,20);
         add(card);
 
         JLabel balance = new JLabel();
-        balance.setBounds(20,400,300,20);
+        balance.setBounds(20,420,300,20);
         add(balance);
 
         try {
@@ -56,7 +51,7 @@ public class MiniStatement extends JFrame {
             System.out.println(e);
         }
 
-        mini.setBounds(20,140,400,200);
+        mini.setBounds(20,90,400,200);
 
         setSize(400,500);
         setLocation(500,100);

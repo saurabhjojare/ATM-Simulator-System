@@ -8,12 +8,12 @@ import java.util.*;
 import java.util.Date;
 
 public class FastCash extends JFrame implements ActionListener {
-
     JButton onehundred, fivehundred, onethousand, twothousand, fivethousand, tenthousand, back;
     String pinnumber;
     FastCash(String pinnumber) {
 
         this.pinnumber = pinnumber;
+
         ImageIcon img = new ImageIcon(ClassLoader.getSystemResource("icons/atm.jpg"));
         Image img2 = img.getImage().getScaledInstance(700, 700, Image.SCALE_DEFAULT);
         ImageIcon img3 = new ImageIcon(img2);
@@ -21,50 +21,44 @@ public class FastCash extends JFrame implements ActionListener {
         image.setBounds(0,0,700,700);
         add(image);
 
-        JLabel text = new JLabel("Select Amount");
-        text.setBounds(179,220,700,35);
-        text.setForeground(Color.WHITE);
-        text.setFont(new Font("System", Font.BOLD,14));
-        image.add(text);
-
         onehundred = new JButton("Rs 100");
-        onehundred.setBounds(120,331,120,24);
+        onehundred.setBounds(80,258,131,24);
         onehundred.addActionListener(this);
         image.add(onehundred);
 
         fivehundred = new JButton("Rs 500");
-        fivehundred.setBounds(258,331,131,24);
+        fivehundred.setBounds(80,288,131,24);
         fivehundred.addActionListener(this);
         image.add(fivehundred);
 
         onethousand = new JButton("Rs 1000");
-        onethousand.setBounds(120,361,120,24);
+        onethousand.setBounds(80,318,131,24);
         onethousand.addActionListener(this);
         image.add(onethousand);
 
         twothousand = new JButton("Rs 2000");
-        twothousand.setBounds(258,361,131,24);
+        twothousand.setBounds(218,258,131,24);
         twothousand.addActionListener(this);
         image.add(twothousand);
 
         fivethousand = new JButton("Rs 5000");
-        fivethousand.setBounds(120,391,120,24);
+        fivethousand.setBounds(80,346,131,24);
         fivethousand.addActionListener(this);
         image.add(fivethousand);
 
         tenthousand = new JButton("Rs 10000");
-        tenthousand.setBounds(258,391,131,24);
+        tenthousand.setBounds(218,288,131,24);
         tenthousand.addActionListener(this);
         image.add(tenthousand);
 
         back = new JButton("Back");
-        back.setBounds(120,420,120,24);
+        back.setBounds(218,318,131,24);
         back.addActionListener(this);
         image.add(back);
 
         getContentPane().setBackground(Color.WHITE);
-        setSize(700,700);
-        setLocation(340,17);
+        setSize(600,510);
+        setLocation(390,100);
         setUndecorated(true);
         setVisible(true);
     }

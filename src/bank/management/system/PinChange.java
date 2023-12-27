@@ -11,7 +11,7 @@ public class PinChange extends JFrame implements ActionListener {
     JButton change, back;
     String pinnumber;
     PinChange(String pinnumber) {
-        setLayout(null);
+
         this.pinnumber = pinnumber;
 
         ImageIcon img = new ImageIcon(ClassLoader.getSystemResource("icons/atm.jpg"));
@@ -21,48 +21,42 @@ public class PinChange extends JFrame implements ActionListener {
         image.setBounds(0,0,700,700);
         add(image);
 
-        JLabel text = new JLabel("Pin Change");
-        text.setBounds(179,240,700,35);
-        text.setForeground(Color.WHITE);
-        text.setFont(new Font("System", Font.BOLD,14));
-        image.add(text);
-
-        pin = new JPasswordField();
-        pin.setFont(new Font("Raleway",Font.BOLD,22));
-        pin.setBounds(179,310,200,20);
-        image.add(pin);
-
         JLabel pintext = new JLabel("New PIN");
-        pintext.setBounds(179,270,700,35);
+        pintext.setBounds(80,190,700,35);
         pintext.setForeground(Color.WHITE);
         pintext.setFont(new Font("System", Font.BOLD,14));
         image.add(pintext);
 
-        repin = new JPasswordField();
-        repin.setFont(new Font("Raleway",Font.BOLD,22));
-        repin.setBounds(179,370,200,20);
-        image.add(repin);
+        pin = new JPasswordField();
+        pin.setFont(new Font("Raleway",Font.BOLD,22));
+        pin.setBounds(80,230,200,20);
+        image.add(pin);
 
         JLabel repintext = new JLabel("Re-Enter New PIN");
-        repintext.setBounds(179,330,700,35);
+        repintext.setBounds(80,250,700,35);
         repintext.setForeground(Color.WHITE);
         repintext.setFont(new Font("System", Font.BOLD,14));
         image.add(repintext);
 
+        repin = new JPasswordField();
+        repin.setFont(new Font("Raleway",Font.BOLD,22));
+        repin.setBounds(80,290,200,20);
+        image.add(repin);
+
         change = new JButton("Change");
-        change.setBounds(270,400,120,30);
+        change.setBounds(226,330,120,30);
         change.addActionListener(this);
         image.add(change);
 
         back = new JButton("Back");
-        back.setBounds(135,400,120,30);
+        back.setBounds(78,330,120,30);
         back.addActionListener(this);
         image.add(back);
 
         getContentPane().setBackground(Color.WHITE);
-        setSize(700,700);
-        setLocation(340,17);
-        //setUndecorated(true);
+        setSize(600,510);
+        setLocation(390,100);
+        setUndecorated(true);
         setVisible(true);
     }
 
