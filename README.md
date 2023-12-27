@@ -27,7 +27,7 @@ To run the Bank Management System locally, follow these steps:
 git clone https://github.com/saurabhjojare/Bank-Management-System.git
 
 3. Import the project into your preferred IDE (such as Eclipse).
-4. Set up a MySQL database and configure the database connection settings in the project.
+4. Set up a MySQL [database](https://github.com/saurabhjojare/Bank-Management-System/blob/main/src/database/tables.sql) and configure the database connection settings in the project.
 5. Import JAR files.
 6. Build and run the project.
 
